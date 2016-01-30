@@ -9,7 +9,7 @@ $(document).ready(function(event){
    });
 });
 function getData(){
-    $.get('https://api.github.com/users' + $('#inputText').val(), "", function(data){
+    $.get('https://api.github.com/users/' + $('#inputText').val(), "", function(data){
          var Avatar = "https://api.github.com/users/" + data['user']['id'] + "/avatar";
          var Username = data['user']['username'];
          var url = data['url'];
