@@ -14,9 +14,10 @@ function getData(){
          var Username = data['login'];
          var url = data['html_url'];
          var lastPlayed = "None";
-         var joined = data['createdAt'];
+         var joined = data['created_at'];
          var html = '<center><img src="' + Avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
          html += '<br>Name:' + Username + '</br>';
+         html += '<br>Joined Github:' + joined + '</br>';
          // Center
          html += '<br><b>url: </b>' + url;
          $('.profile').html(html);
