@@ -16,7 +16,8 @@ function getData(){
          var lastPlayed = "None";
          var joined = data['createdAt'];
          var html = '<center><img src="' + Avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
-         html += '<h1>Nane:' + Username + '</h1>';
+         html += '<br>Name:' + Username + '</br>';
+         // Center
          html += '<br><b>url: </b>' + url;
          $('.profile').html(html);
       });;
