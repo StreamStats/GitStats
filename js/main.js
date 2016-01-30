@@ -12,7 +12,7 @@ function getData(){
     $.get('https://api.github.com/users/' + $('#inputText').val(), "", function(data){
          var Avatar = data['avatar_url'];
          var Username = data['login'];
-         var url = data['url'];
+         var url = data['html_url'];
          var lastPlayed = "None";
          var joined = data['createdAt'];
          var html = '<center><img src="' + Avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
