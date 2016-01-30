@@ -18,5 +18,6 @@ function getData(){
          var html = '<center><img src="' + Avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
          html += '<h1>' + Username + '</h1>';
          html += '<br><b>url: </b>' + url;
+         $('.profile').html(html);
       });;
 }
