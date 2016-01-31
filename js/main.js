@@ -21,5 +21,9 @@ function getData(){
          // Center
          html += '<br><b>Url Link: </b>' + url;
          $('.profile').html(html);
+      }).fail(function(data){
+            html = '<h1>A Github user with that name does not exist.';
+             $('.profile').html(html);
+            return;
       });;
 }
