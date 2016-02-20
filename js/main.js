@@ -17,9 +17,9 @@ function getData(){
          var lastPlayed = "None";
          var joined = data['created_at'];
          var html = '<center><img src="' + Avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
-         html += '<br>Name: ' + Username + '</br>';
+         html += '<h1><span class="label label-success">' + Username + '</h1>';
          html += '<br>Location: ' + Location + '</br>';
-          html += '<br>Joined Github: ' + joined + '</br>';
+         html += '<br>Joined Github: ' + joined + '</br>';
          // Center
          html += '<br><b>Url Link: </b>' + Url;
          $('.profile').html(html);
